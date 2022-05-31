@@ -1,0 +1,1 @@
+tr -d '[:upper:]' < text.txt
