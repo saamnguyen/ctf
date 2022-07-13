@@ -3,8 +3,8 @@ flag = "[REDACTED]"
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 #assert > True -> nothing
-#asssert ? False -> return error, AssertionError 
-#assert(flag[0:5]+flag[-1]=="flag{}")
+# asssert ? False -> return error, AssertionError 
+assert(flag[0:5]+flag[-1]=="flag{}")
 ciphertext = ""
 for character in flag[5:-1]:
     state = (15*state+18)%29

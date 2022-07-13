@@ -1,5 +1,5 @@
 state = 1
-flag = "[REDACTED]"
+
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 c = 'mawhxyovhiiupukqnzdekudetmjmefkqjgmqndgtnrxqxludegwovdcdmjjhw'
 
@@ -9,7 +9,7 @@ c = 'mawhxyovhiiupukqnzdekudetmjmefkqjgmqndgtnrxqxludegwovdcdmjjhw'
 ciphertext = ""
 for character in c:
     state = (15*state+18)%29
-    ciphertext+=alphabet[(alphabet.index(character)-state)*26]
+    ciphertext+=alphabet[(alphabet.index(character)-state)%26]
 print(ciphertext)
 
 #mawhxyovhiiupukqnzdekudetmjmefkqjgmqndgtnrxqxludegwovdcdmjjhw
