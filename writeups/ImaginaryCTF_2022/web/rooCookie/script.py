@@ -7,3 +7,5 @@ while i < len(text):
     decrypt += chr(temp)
     i += 11
 print(decrypt)    
+
+#flag: ictf{h0p3_7ha7_wa5n7_t00_b4d}
